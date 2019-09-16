@@ -1,9 +1,9 @@
 // Test away
 import React from 'react';
-import {render, fireEvent} from '@testing-library/react';
+import {render} from '@testing-library/react';
 import Dashboard from './Dashboard';
 
-describe('<Dashboard />', () => {
+test('<Dashboard />', () => {
   // snapshot test
   it('should match snapshot', () => {
     expect(render(<Dashboard />)).toMatchSnapshot();
